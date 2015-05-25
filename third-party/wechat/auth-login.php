@@ -149,7 +149,7 @@ class WeixinOauth {
 	 */
 	function AuthAccessToken()
 	{
-		$url = $this->api_host.'/sns/oauth2/auth';
+		$url = $this->api_host.'/sns/auth';
 		$param = array(
 			'access_token' => $this->access_token,
 			'openid'       => $this->openid,
@@ -164,7 +164,7 @@ class WeixinOauth {
 	 */
 	function getuserinfo()
 	{
-		$url = $this->api_host.'/sns/oauth2/userinfo';
+		$url = $this->api_host.'/sns/userinfo';
 		$param = array(
 			'access_token' => $this->access_token,
 			'openid'       => $this->openid,
